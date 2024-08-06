@@ -1,0 +1,174 @@
+*{
+    margin-top:0 ;
+}
+.hidden {
+    display: none;
+}
+    
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5em;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: #707070;
+
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.icon-check,.icon-remove {
+    display: none;
+  }
+.main{
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    color: #f2f2f2;
+    background-color: rgb(96, 96, 96);
+    border-radius: 0% 0px 5% 5%;
+}
+
+
+#h1, #error{
+  color: white;
+}
+
+/* input*/ 
+.input{
+    color: white;
+}
+.wave-group {
+    position: relative;
+  }
+  
+  .wave-group .input {
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+  }
+  
+  .wave-group .input:focus {
+    outline: none;
+  }
+  
+  .wave-group .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+    
+  }
+  
+  .wave-group .input:focus ~ label .label-char,
+  .wave-group .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 16px;
+    color: #d8c9c9;
+    
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #ffffff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 50%;
+  }
+  
+  .wave-group .input:focus ~ .bar:before,
+  .wave-group .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  
+/*Button */ 
+button {
+    width: 130px;
+    height: 40px;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 0.9rem;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  button:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 1em;
+  }
+
+    .erro-div{
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .erro-div h1{
+      font-size: 5em;
+    }
+
+
+
+
+    .container {
+      width: 100%;
+      height: 100%;
+      --s: 200px; /* control the size */
+      --c1: #1d1d1d;
+      --c2: #4e4f51;
+      --c3: #3c3c3c;
+    
+      background: repeating-conic-gradient(
+            from 30deg,
+            #0000 0 120deg,
+            var(--c3) 0 180deg
+          )
+          calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+        repeating-conic-gradient(
+          from 30deg,
+          var(--c1) 0 60deg,
+          var(--c2) 0 120deg,
+          var(--c3) 0 180deg
+        );
+      background-size: var(--s) calc(var(--s) * 0.577);
+    }
+    

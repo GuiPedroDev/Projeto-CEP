@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>AJAX</title>
+</head>
+<body class="container">    
+<div class="main">
+    <center>
+    <br><h1>Consumindo dados externos</h1> </center>
+
+    <h1>Digite seu CEP</h1>
+    <div class="wave-group">
+        <input type="text" class="input" name="cep" id="cep"required >
+
+      <span class="bar"></span>
+      <label class="label">
+        <span class="label-char" style="--index: 0">C</span>
+        <span class="label-char" style="--index: 1">E</span>
+        <span class="label-char" style="--index: 2">P</span>    
+      </label>
+    </div>
+    <br>
+    <button type="submit" class="btn">Enviar</button>
+    </div>
+
+
+
+        <div class="erro-div">
+            <h1 id="h1"></h1>
+            <p id="error"></p>
+        </div>
+   
+        <table id="tabela" class="hidden">
+            
+   
+            <tr>
+                <th>UF</th>
+                <th>Cidade</th>
+                <th>DDD</th>
+                <th>Logradouro</th>
+                <th>Bairro</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> </td>
+                <td></td>
+            </tr>
+        
+        </table>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
